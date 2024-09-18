@@ -442,3 +442,24 @@ The models were evaluated using Mean Squared Error (MSE) and R-squared (R2) metr
 - The negative R-squared values for some neural network models highlight their poor performance, potentially due to overfitting or underfitting.
 
 By carefully considering these insights and recommendations, you can make informed decisions about model selection and deployment for your specific use case.
+
+## Updates
+
+**Improved Model Performance:**
+
+* Implemented a dedicated module to evaluate the MLPRegressor model for water content and potential prediction. This enhances code organization and facilitates future improvements.
+* Optimized the TensorFlow/Keras Neural Network for water content and potential prediction.
+
+**Performance Analysis:**
+
+* The MLPRegressor shows strong performance for both water content and water potential prediction. Notably, it achieves a higher R2 value for water potential, indicating a better fit to the data. However, the higher MSE suggests the model might make slightly larger errors compared to water content prediction.
+* The TensorFlow neural network performs well for water content prediction, with results comparable to the MLPRegressor. However, for water potential prediction, the MLPRegressor currently outperforms the neural network in terms of both MSE and R2. 
+
+**Future Work:**
+
+* We will continue to investigate and optimize the TensorFlow/Keras Neural Network for water potential prediction to improve its performance and potentially surpass the MLPRegressor.
+* Further exploration of hyperparameter tuning and potentially different network architectures for the neural network might be beneficial.
+
+**Benefits:**
+
+These improvements contribute to a more robust and accurate prediction system for water content and potential. 
