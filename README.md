@@ -91,8 +91,6 @@ The models were evaluated using Mean Squared Error (MSE) and R-squared (R2) metr
 | RandomForestRegressor | (14.2428, 0.619981) | (0.504743, 0.952455) |
 | GradientBoostingRegressor | (19.4914, 0.479941) | (0.580724, 0.945298) |
 | SVR | (23.1705, 0.381778) | (3.03759, 0.713869) |
-| MLPRegressor (scikit-learn) | (315.546, -7.41923) | (34.0868, -2.21087) |
-| TensorFlow Neural Network | (0.0036, -1.6845) | (83.5935, -1.3649) |
 
 **Key Takeaways:**
 
@@ -120,16 +118,12 @@ The models were evaluated using Mean Squared Error (MSE) and R-squared (R2) metr
 | RandomForestRegressor | (0.000134631, 0.900319) | (4.74591, 0.865734) |
 | GradientBoostingRegressor | (9.88234e-05, 0.926831) | (5.72953, 0.837906) |
 | SVR | (0.00184444, -0.365631) | (27.3679, 0.225736) |
-| MLPRegressor (scikit-learn) | (0.00398168, -1.94804) | (418.699, -10.8454) |
-| TensorFlow Neural Network | (0.0036, -1.6845) | (83.5935, -1.3649) |
 | **Late Morning Average Data** | | |
 | LinearRegression | (16.0563, 0.571595) | (1.46815, 0.861705) |
 | DecisionTreeRegressor | (32.1413, 0.142422) | (0.812778, 0.923439) |
 | RandomForestRegressor | (14.2428, 0.619981) | (0.504743, 0.952455) |
 | GradientBoostingRegressor | (19.4914, 0.479941) | (0.580724, 0.945298) |
 | SVR | (23.1705, 0.381778) | (3.03759, 0.713869) |
-| MLPRegressor (scikit-learn) | (315.546, -7.41923) | (34.0868, -2.21087) |
-| TensorFlow Neural Network | (0.0036, -1.6845) | (83.5935, -1.3649) |
 
 **Key Observations:**
 
@@ -164,7 +158,7 @@ The models were evaluated using Mean Squared Error (MSE) and R-squared (R2) metr
 
 By carefully considering these insights and recommendations, you can make informed decisions about model selection and deployment for your specific use case.
 
-## Updates
+## Neural Network Models: MLPRegressor (scikit-learn) and TensorFlow/Keras
 
 **Improved Model Performance:**
 
