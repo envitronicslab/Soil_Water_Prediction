@@ -62,21 +62,16 @@ The models were evaluated using Mean Squared Error (MSE) and R-squared (R2) metr
 | RandomForestRegressor | (0.000134631, 0.900319) | (4.74591, 0.865734) |
 | GradientBoostingRegressor | (9.88234e-05, 0.926831) | (5.72953, 0.837906) |
 | SVR | (0.00184444, -0.365631) | (27.3679, 0.225736) |
-| MLPRegressor (scikit-learn) | (0.00398168, -1.94804) | (418.699, -10.8454) |
-| TensorFlow Neural Network | (0.0036, -1.6845) | (83.5935, -1.3649) |
 
 **Key Takeaways:**
 
 - **Water Content:** Decision Tree Regressor, Random Forest Regressor, and Gradient Boosting Regressor consistently outperformed other models, demonstrating excellent accuracy.
 - **Water Potential:** Decision Tree Regressor, Random Forest Regressor, and GradientBoostingRegressor remained effective, suggesting their suitability for predicting water potential.
-- **Neural Networks:** Both the scikit-learn MLPRegressor and the custom TensorFlow neural network struggled with water potential prediction, highlighting the potential challenges of neural networks for complex tasks.
 - **Model Selection:** The choice of model might depend on specific requirements and considerations, such as interpretability, computational efficiency, and the complexity of the task.
-- **Further Exploration:** For water potential prediction, exploring different neural network architectures, hyperparameter tuning, and feature engineering could potentially improve performance.
 
 **Further Analysis:**
 
 - Decision Tree Regressor, Random Forest Regressor, and Gradient Boosting Regressor consistently demonstrated strong performance for both water content and potential.
-- Neural networks might require further tuning and experimentation to effectively predict water potential.
 
 ## Analyzing Model Performance: : Late Morning Average Microclimate Data
 
@@ -96,13 +91,6 @@ The models were evaluated using Mean Squared Error (MSE) and R-squared (R2) metr
 
 - **Water Content:** Linear Regression, Random Forest Regressor, and Gradient Boosting Regressor demonstrated good performance, while Decision Tree Regressor and SVR struggled.
 - **Water Potential:** RandomForestRegressor consistently outperformed other models, suggesting its suitability for predicting water potential.
-- **Neural Networks:** Both the scikit-learn MLPRegressor and the custom TensorFlow neural network struggled with both water content and water potential prediction.
-
-**Further Analysis:**
-
-- The underperformance of the neural network models might be attributed to factors like hyperparameter tuning, data quality, or model complexity.
-- Experimentation with different architectures, hyperparameters, and feature engineering techniques could potentially improve the performance of the neural networks.
-- Consider exploring other machine learning algorithms or combining multiple models (ensembling) to achieve better results.
 
 ## Analyzing Model Performance: Daily vs. Late Morning Microclimate Data
 
@@ -135,26 +123,22 @@ The models were evaluated using Mean Squared Error (MSE) and R-squared (R2) metr
   - The choice of data type (daily vs. late morning average) had a significant impact on water potential prediction.
   - For daily average data, Decision Tree Regressor, Random Forest Regressor, and Gradient Boosting Regressor exhibited excellent performance.
   - For late morning average data, the performance of all ML models improved significantly.
-- **Neural Networks:** Both the scikit-learn MLPRegressor and the custom TensorFlow neural network struggled with water potential prediction, regardless of data type.
 
 **Conclusions:**
 
 - **Data Type:** The choice of data type (daily vs. late morning average) had a significant impact on both water potential and water content predictions.
 - **Model Selection:** Random Forest Regressor consistently demonstrated strong performance for both water content and potential.
-- **Neural Networks:** Neural networks might require further tuning and experimentation to effectively predict water potential.
 
 **Recommendations:**
 
 - For water content prediction, Random Forest Regressor or Gradient Boosting Regressor can be used effectively with daily average data.
 - For water potential prediction, consider using Decision Tree Regressor, Random Forest Regressor, or Gradient Boosting Regressor with late morning average data.
-- Experiment with different neural network architectures, hyperparameters, and feature engineering techniques to improve their performance for water potential prediction.
 - Continue exploring other machine learning algorithms and combining models to further enhance accuracy and robustness.
 
 **Additional Insights:**
 
 - The relatively high R-squared values for most models, especially for water content prediction, indicate that the models are able to explain a significant portion of the variance in the data.
 - The lower MSE values for the top-performing models suggest that they are making more accurate predictions.
-- The negative R-squared values for some neural network models highlight their poor performance, potentially due to overfitting or underfitting.
 
 By carefully considering these insights and recommendations, you can make informed decisions about model selection and deployment for your specific use case.
 
