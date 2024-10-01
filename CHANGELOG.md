@@ -1,5 +1,11 @@
 ## Soil Water Prediction Project Changelog
 
+**Version 2.0.1 (2024-10-01)**
+
+**Minor Improvements**
+
+* **Updated README file:** Refined README file instructions to align with the latest project changes and enhancements. 
+
 **Version 2.0.0 (2024-10-01)**
 
 **New Features**
