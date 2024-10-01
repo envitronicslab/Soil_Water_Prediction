@@ -2,7 +2,7 @@
 
 **Introduction:**
 
-This repository showcases a comprehensive exploration of advanced machine learning algorithms applied to predict soil water content and potential using microclimate data. The dataset is a representative sample of microclimate data collected from six apple orchards in Washington State. Key variables include wind speed, solar radiation, relative humidity, air temperature, canopy temperature, and soil temperature.
+This repository showcases a comprehensive exploration of advanced machine learning algorithms applied to predict soil water content and potential using microclimate data. The dataset is a representative sample of microclimate data collected from six apple orchards in the United States. Key variables include wind speed, solar radiation, relative humidity, air temperature, canopy temperature, and soil temperature.
 
 By employing cutting-edge machine learning techniques, this project aims to develop accurate and reliable models capable of estimating soil water content and potential. The code encompasses data preprocessing, model training and evaluation, and result visualization to facilitate analysis and comparison of different algorithms.
 
@@ -25,7 +25,7 @@ By employing cutting-edge machine learning techniques, this project aims to deve
 2. Open the Jupyter Notebook file.
 3. Run the cells to execute the code.
 
-**Note:** Ensure you have the necessary data file ("royal_city_xx.csv") in the same directory as the Jupyter Notebook.
+**Note:** Ensure you have the necessary data file ("royal_city_xx.csv") in the `microclimate_data` directory.
 
 By following these steps, you should be able to successfully set up and run the project.
 
@@ -33,11 +33,12 @@ By following these steps, you should be able to successfully set up and run the 
 
 **Task:** Develop machine learning and neural network models to predict soil water content and potential based on given environmental variables.
 
-**Data:** A CSV file named `royal_city_xx.csv` containing 9 columns: `julian_day`, `wind_speed`, `solar_radiation`, `relative_humidity`, `air_temp`, `canopy_temp_mean`, `soil_temp`, `water_content_mean`, `water_potential_mean`.
+**Data:** A CSV file named `royal_city_xx.csv` containing 9 columns: `julian_day`, `wind_speed`, `solar_radiation`, `relative_humidity`, `air_temp`, `canopy_temp_mean`, `soil_temp`, `water_content_mean`, `water_potential_mean`. 
+**Note:** One of the data files also includes an additional column: `time`.
 
 **Model Overview:**
 
-This project employed a range of machine learning algorithms to predict soil water content and potential. The models included:
+This project employed a range of machine learning algorithms to predict soil water content and potential. The models included, but are not limited to:
 
 * **Linear Regression:** A classic statistical model that establishes a linear relationship between the features and the target variable.
 * **Decision Tree Regressor:** A tree-based model that makes decisions based on a series of if-else questions.
