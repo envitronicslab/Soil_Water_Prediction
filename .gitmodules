@@ -1,0 +1,3 @@
+[submodule "submodules/cwsi"]
+	path = submodules/cwsi
+	url = https://github.com/envitronicslab/CWSI_Function.git
