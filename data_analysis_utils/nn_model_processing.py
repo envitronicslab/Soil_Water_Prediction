@@ -50,8 +50,8 @@ class NNModelProcessor(ModelProcessor):
             # Choices are: 'identity', 'logistic', 'tanh', 'relu'. 
             # If you use an 'sgd' solver', try 'tanh' activation first.
             # If you use an 'adam' solver', try 'relu' activation first.
-            'activation': ['relu', 'tanh', 'identity', 'logistic'],
-            # 'activation': ['relu'], 
+            # 'activation': ['relu', 'tanh', 'identity', 'logistic'],
+            'activation': ['relu'], 
             # Try different solvers
             # Choices are: 'adam', 'sgd', or 'lbfgs'.     
             # 'solver': ['adam', 'sgd', 'lbfgs'], 
